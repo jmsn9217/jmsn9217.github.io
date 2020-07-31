@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--
+      Joshua Stevens
+      Cheech's Flexible Pizza Parlor
+      13 July 2020
+      order.html
+    -->
+    <meta charset="utf-8">
+    <title>Order</title>
+    <script src="https://use.fontawesome.com/7cd7d260bf.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="header">
+        <h1>Cheech's Pizza Parlor</h1>
+        <img id="sign" src="sign.jpg" alt="Pizza Sign">
+      </div>
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="">Locations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="column-container">
+      <div class="col1">
+        <h2>Order Online</h2>
+        <form class="info" method="get">
+          <fieldset>
+            <legend>
+              Contact Information
+            </legend>
+            <div class="customer">
+              <input autofocus type="text" name="fname" id="fname" required placeholder="First name">
+            </div>
+            <div class="customer">
+              <input type="text" name="lname" id="lname" required placeholder="Last name">
+            </div>
+            <div class="customer">
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number" value="">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Order</legend>
+            <div class="pizza">
+              <select class="pizza" name="pizza">
+                <option value="Cheese">The Plain Jane</option>
+                <option value="Pep">The Classic</option>
+                <option value="Meat">The Carnivore</option>
+                <option value="Omni">The Omnivore</option>
+                <option value="Vegtrn">The Herbivore</option>
+                <option value="Veg">The Hippie</option>
+              </select>
+            </div>
+            <div class="pizza">
+              <label for="quantity">
+                Quantity
+                <input type="number" id="quantity" name="quantity" min="1" max="1000">
+              </label>
+            </div>
+            <input id="submit" class="submit" type="submit" value="Place Order">
+
+          </fieldset>
+        </form>
+
+      </div>
+      <div class="col2">
+        <div class="testimony">
+          <h2>Customer Review</h2>
+          <p>Johnny von Hawny: &#9733; &#9733; &#9733; <br> "Honestly, not bad, but not great. It's pizza."</p>
+          <p id="help">Give us feedback!<br>Email: cheech@pizza.cizzom<br>Phone: 666-666-6666</p>
+          <div class="socialmedia">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+
+          </div>
+        </div>
+        <div class="contactus">
+
+        </div>
+        <div class="socialmedia">
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

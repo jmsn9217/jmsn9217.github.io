@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--
+      Joshua Steves
+      June 25 2020
+      Fit for Fun Fitness Club
+      info.html
+      Information page
+
+    -->
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <nav>
+      <ul id="menu">
+        <li>
+          <a href="index.html"> Home </a>
+        </li>
+        <li>
+          <a href="classes.html"> Classes </a>
+        </li>
+        <li>
+          <a href="info.html"> Sign Up </a>
+        </li>
+      </ul>
+
+    </nav>
+    <header>
+      Fit for Fun Fitness Club
+    </header>
+
+    <div class="container">
+      <h2>Sign Up Form</h2>
+      <form class="" action="thankyou.html" method="get">
+        <fieldset>
+          <legend>
+            Contact Information
+          </legend>
+
+          <label for="fname">
+            First name:
+            <input autofocus type="text" name="fname" id="fname" required placeholder="First name">
+          </label>
+          <label for="lname">
+            Last name:
+            <input type="text" name="lname" id="lname" required placeholder="Last name">
+          </label>
+          <label for="email">
+            Email:
+            <input type="email" name="email" id="email" required placeholder="Email">
+          </label>
+          <label for="phone">
+            Phone:
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-111-2222" value="">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Method</legend>
+          <select class="reachyouby" name="reachyouby">
+            <option value="Email">Reach me by email</option>
+            <option value="Phone">Reach me by phone</option>
+            <option value="Other">Other: please explain in text box at the bottom of this form</option>
+          </select>
+
+        </fieldset>
+        <fieldset>
+          <legend>Classes You're Interested In</legend>
+          <label for="class1">
+            Cross Training
+            <input id="class1" type="checkbox" name="class1" value="Cross Training">
+          </label>
+          <label for="class2">
+            Sprint
+            <input id="class2" type="checkbox" name="class2" value="Sprint">
+          </label>
+          <label for="class3">
+            Spin
+            <input id="class3" type="checkbox" name="class3" value="Spin">
+          </label>
+          <label for="class4">
+            Body Pump
+            <input id="class4" type="checkbox" name="class4" value="Body Pump">
+          </label>
+          <label for="class5">
+            Body Combat
+            <input id="class5" type="checkbox" name="class5" value="Body Combat">
+          </label>
+          <label for="class6">
+            Step Interval
+            <input id="class6" type="checkbox" name="class6" value="Step Interval">
+          </label>
+          <label for="class7">
+            Advanced Cross Training
+            <input id="class7" type="checkbox" name="class7" value="Advanced Cross Training">
+          </label>
+          <label for="class8">
+            MixxedFIT
+            <input id="class8" type="checkbox" name="class8" value="MixxedFIT">
+          </label>
+          <label for="class9">
+            Zumba
+            <input id="class9" type="checkbox" name="class9" value="Zumba">
+          </label>
+          <br>
+          <br>
+          <label for="am">
+            AM Classes
+            <input id="am" type="radio" name="am" value="AM">
+          </label>
+          <label for="pm">
+            PM Classes
+            <input id="pm" type="radio" name="pm" value="PM">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Any Additional Info</legend>
+          <label for="addinfo">
+            <textarea id="addinfo" name="comments" rows="5" cols="80"></textarea>
+          </label>
+        </fieldset>
+        <p id="disclaimer">This information will be displayed in the url when submitted. Please, do not include sensitive information. Thanks!</p>
+        <input id="submit" class="submit" type="submit" value="Submit">
+      </form>
+    </div>
+    <footer>
+      <ul id="footer">
+        <li>Fit for Fun Fitness Club</li>
+        <li>Joshua Stevens</li>
+        <li>417-417-4117</li>
+        <li>fitforfun@blackmail.com</li>
+      </ul>
+
+    </footer>
+
+
+  </body>
+
+</html>
